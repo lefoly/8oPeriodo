@@ -31,18 +31,17 @@ public class TesteWeka2 {
         apriori.setClassIndex(ins.classIndex());
         apriori.buildAssociations(ins);
 
-        // output associator
-        //System.out.println(apriori);
-        /*System.out.println();
+        //output associator
+        System.out.println(apriori);
+        System.out.println();
         System.out.println("------------------------");
         System.out.println(apriori.getAssociationRules().getRules().get(0));
 
         List<AssociationRule> lista = apriori.getAssociationRules().getRules();
         System.out.println(lista.get(0).getPremise());
         System.out.println(lista.get(0).getConsequence());
-
         System.out.println(apriori.getNumRules());
-         */
+         
         //System.out.println(ins.attribute(0).value(0));
         //System.out.println(ins.attribute(0).value(1));
         ArrayList<Atributo> atributos = new ArrayList();
