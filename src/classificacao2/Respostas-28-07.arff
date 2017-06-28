@@ -1,0 +1,75 @@
+@RELATION curso
+@ATTRIBUTE periodo {1oP,2oP,3oP,4oP,5oP,6oP,7oP,8oP}
+@ATTRIBUTE idade {17-20,21-29,29-30,MaisDe30}
+@ATTRIBUTE sexo {Feminino,Masculino}
+@ATTRIBUTE moraemitap {Nao,Sim}
+@ATTRIBUTE trabalha {Nao,Sim}
+@ATTRIBUTE casado(a) {Nao,Sim}
+@ATTRIBUTE filhos {zero,um,dois,tres,MaiDe3}
+@ATTRIBUTE origem {Particular,Estadual,Federal}
+@ATTRIBUTE ingresso {ENEM,Vestibular,Transferencia}
+@ATTRIBUTE cota {Nao,Sim}
+@ATTRIBUTE locomocao {Carro,Moto,Outros,Onibus}
+@ATTRIBUTE tempochegar {30m,1h-2h,30min-1h,Sup2h}
+@ATTRIBUTE dependencias {0,1a2,3a5,Maisde5}
+@ATTRIBUTE perdeu {0,1a2,3a5,Maisde5}
+@ATTRIBUTE afinidade {Administracao,AnalProjetoSistemas,DesenvdeSistemas,InfraRedes,Matematica}
+@ATTRIBUTE motivacao {um,dois,tres,quatro,cinco,seis,sete,oito,nove,dez}
+
+@DATA
+8oP,21-29,Masculino,Sim,Nao,Nao,zero,Estadual,Vestibular,Nao,Onibus,30min-1h,0,0,InfraRedes,oito
+7oP,21-29,Feminino,Nao,Nao,Nao,zero,Federal,Vestibular,Nao,Onibus,30min-1h,0,0,Administracao,oito
+5oP,21-29,Masculino,Nao,Sim,Nao,zero,Estadual,ENEM,Nao,Onibus,1h-2h,1a2,0,AnalProjetoSistemas,sete
+6oP,21-29,Masculino,Nao,Sim,Nao,zero,Estadual,Vestibular,Nao,Onibus,30min-1h,1a2,1a2,DesenvdeSistemas,cinco
+4oP,21-29,Masculino,Nao,Nao,Nao,zero,Particular,Vestibular,Nao,Onibus,1h-2h,1a2,0,Administracao,seis
+7oP,21-29,Masculino,Nao,Nao,Nao,zero,Estadual,Vestibular,Nao,Onibus,30m,1a2,0,DesenvdeSistemas,oito
+3oP,21-29,Masculino,Sim,Sim,Nao,zero,Federal,ENEM,Sim,Moto,30m,3a5,1a2,AnalProjetoSistemas,quatro
+3oP,17-20,Masculino,Nao,Nao,Nao,zero,Federal,ENEM,Nao,Onibus,1h-2h,0,0,DesenvdeSistemas,sete
+8oP,21-29,Masculino,Sim,Sim,Nao,zero,Federal,Vestibular,Nao,Moto,30m,1a2,0,InfraRedes,oito
+3oP,17-20,Feminino,Sim,Sim,Nao,zero,Estadual,ENEM,Nao,Onibus,30m,0,0,AnalProjetoSistemas,sete
+2oP,21-29,Masculino,Sim,Sim,Nao,zero,Estadual,Vestibular,Nao,Moto,30m,1a2,0,DesenvdeSistemas,cinco
+3oP,21-29,Feminino,Nao,Sim,Nao,zero,Estadual,ENEM,Sim,Onibus,30min-1h,1a2,1a2,Administracao,sete
+7oP,21-29,Feminino,Nao,Sim,Nao,zero,Federal,Vestibular,Nao,Onibus,30min-1h,0,0,DesenvdeSistemas,dez
+6oP,17-20,Feminino,Sim,Nao,Nao,zero,Particular,ENEM,Nao,Onibus,30m,0,0,AnalProjetoSistemas,quatro
+8oP,21-29,Masculino,Sim,Sim,Nao,zero,Estadual,Vestibular,Nao,Moto,30m,1a2,0,DesenvdeSistemas,oito
+8oP,21-29,Masculino,Sim,Sim,Nao,zero,Federal,Vestibular,Nao,Carro,30m,0,0,DesenvdeSistemas,oito
+3oP,21-29,Masculino,Sim,Nao,Nao,zero,Federal,Vestibular,Nao,Onibus,30m,0,0,AnalProjetoSistemas,sete
+1oP,21-29,Masculino,Nao,Sim,Nao,um,Estadual,ENEM,Nao,Onibus,1h-2h,0,0,Matematica,nove
+1oP,21-29,Masculino,Nao,Nao,Nao,zero,Estadual,Vestibular,Nao,Onibus,Sup2h,0,0,InfraRedes,oito
+3oP,21-29,Masculino,Sim,Sim,Nao,zero,Federal,ENEM,Nao,Onibus,30m,3a5,1a2,Administracao,seis
+3oP,17-20,Masculino,Sim,Nao,Nao,zero,Estadual,ENEM,Nao,Onibus,30m,1a2,0,DesenvdeSistemas,sete
+2oP,17-20,Masculino,Nao,Nao,Nao,zero,Particular,ENEM,Nao,Onibus,30min-1h,0,0,DesenvdeSistemas,oito
+7oP,21-29,Masculino,Nao,Nao,Nao,zero,Estadual,Vestibular,Nao,Outros,30m,0,0,Administracao,seis
+4oP,21-29,Feminino,Sim,Nao,Nao,zero,Estadual,Vestibular,Nao,Onibus,30min-1h,1a2,0,DesenvdeSistemas,oito
+1oP,17-20,Masculino,Sim,Nao,Nao,zero,Estadual,ENEM,Sim,Onibus,30m,0,0,DesenvdeSistemas,nove
+3oP,17-20,Masculino,Sim,Nao,Nao,zero,Federal,Vestibular,Nao,Onibus,30m,0,0,DesenvdeSistemas,dez
+2oP,21-29,Masculino,Nao,Sim,Nao,zero,Estadual,ENEM,Nao,Onibus,30min-1h,3a5,3a5,AnalProjetoSistemas,tres
+6oP,21-29,Feminino,Sim,Nao,Nao,zero,Estadual,Vestibular,Nao,Onibus,30m,3a5,1a2,InfraRedes,quatro
+3oP,17-20,Masculino,Sim,Sim,Nao,zero,Federal,ENEM,Nao,Onibus,30m,0,0,Matematica,nove
+3oP,29-30,Masculino,Nao,Sim,Nao,zero,Estadual,ENEM,Nao,Onibus,1h-2h,1a2,1a2,AnalProjetoSistemas,oito
+6oP,21-29,Masculino,Sim,Nao,Nao,zero,Estadual,Vestibular,Nao,Onibus,30min-1h,3a5,1a2,DesenvdeSistemas,um
+1oP,21-29,Masculino,Sim,Sim,Sim,zero,Federal,ENEM,Nao,Moto,30m,0,0,DesenvdeSistemas,dez
+2oP,17-20,Feminino,Nao,Sim,Nao,zero,Estadual,ENEM,Nao,Onibus,1h-2h,3a5,1a2,Administracao,oito
+1oP,17-20,Masculino,Nao,Nao,Nao,zero,Particular,ENEM,Nao,Onibus,30min-1h,0,0,DesenvdeSistemas,dez
+1oP,17-20,Feminino,Nao,Nao,Nao,zero,Estadual,ENEM,Sim,Onibus,1h-2h,0,0,DesenvdeSistemas,nove
+3oP,21-29,Feminino,Nao,Sim,Nao,zero,Estadual,Vestibular,Nao,Onibus,30min-1h,3a5,1a2,Administracao,sete
+8oP,21-29,Masculino,Sim,Sim,Sim,um,Estadual,Vestibular,Nao,Carro,30m,0,0,DesenvdeSistemas,oito
+8oP,21-29,Masculino,Sim,Sim,Nao,zero,Estadual,Vestibular,Nao,Onibus,30m,1a2,0,AnalProjetoSistemas,sete
+6oP,21-29,Feminino,Sim,Sim,Nao,zero,Estadual,Vestibular,Sim,Onibus,30min-1h,1a2,1a2,DesenvdeSistemas,nove
+4oP,21-29,Masculino,Sim,Sim,Nao,zero,Estadual,Vestibular,Nao,Moto,30m,0,0,DesenvdeSistemas,oito
+4oP,21-29,Masculino,Nao,Nao,Nao,zero,Federal,Vestibular,Nao,Onibus,30min-1h,1a2,0,DesenvdeSistemas,sete
+4oP,17-20,Masculino,Nao,Nao,Nao,zero,Particular,Vestibular,Nao,Onibus,30m,0,0,Matematica,dez
+3oP,17-20,Masculino,Sim,Nao,Nao,zero,Federal,ENEM,Nao,Onibus,30m,0,0,AnalProjetoSistemas,oito
+3oP,21-29,Masculino,Sim,Sim,Nao,zero,Estadual,Vestibular,Nao,Onibus,30min-1h,1a2,1a2,DesenvdeSistemas,sete
+3oP,21-29,Masculino,Nao,Sim,Nao,zero,Estadual,ENEM,Nao,Onibus,30min-1h,0,0,DesenvdeSistemas,seis
+3oP,17-20,Masculino,Sim,Nao,Nao,zero,Federal,Vestibular,Nao,Onibus,30m,1a2,0,DesenvdeSistemas,sete
+3oP,17-20,Masculino,Sim,Nao,Nao,zero,Estadual,ENEM,Nao,Onibus,30m,1a2,0,DesenvdeSistemas,oito
+3oP,21-29,Masculino,Nao,Nao,Nao,zero,Estadual,Transferencia,Nao,Onibus,30min-1h,1a2,0,Administracao,oito
+4oP,21-29,Masculino,Sim,Sim,Sim,um,Estadual,Vestibular,Nao,Moto,30m,0,0,Matematica,sete
+1oP,MaisDe30,Masculino,Sim,Sim,Nao,zero,Estadual,ENEM,Nao,Outros,30min-1h,0,0,DesenvdeSistemas,cinco
+1oP,21-29,Masculino,Nao,Nao,Nao,zero,Estadual,ENEM,Nao,Onibus,30min-1h,0,0,Matematica,sete
+1oP,MaisDe30,Masculino,Sim,Sim,Nao,zero,Particular,ENEM,Nao,Moto,30m,0,0,DesenvdeSistemas,dez
+6oP,21-29,Feminino,Nao,Sim,Sim,zero,Estadual,Vestibular,Nao,Onibus,30min-1h,1a2,0,Administracao,nove
+7oP,21-29,Feminino,Nao,Sim,Nao,zero,Estadual,Vestibular,Nao,Onibus,30min-1h,3a5,0,Administracao,tres
+7oP,21-29,Masculino,Nao,Sim,Nao,zero,Estadual,Vestibular,Nao,Onibus,1h-2h,0,0,DesenvdeSistemas,dez
+7oP,21-29,Masculino,Nao,Nao,Nao,zero,Estadual,Vestibular,Nao,Onibus,1h-2h,1a2,0,DesenvdeSistemas,dez

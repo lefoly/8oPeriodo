@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testeweka;
+package classificacao2;
 
-import java.util.ArrayList;
 import weka.associations.Apriori;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
@@ -18,7 +17,7 @@ public class TesteWeka3 {
 
     public static void main(String[] args) throws Exception {
 
-        DataSource ds = new DataSource("src/testeweka/respostas.arff");
+        DataSource ds = new DataSource("src/classificacao2/Respostas-28-07.arff");
         Instances data = ds.getDataSet();
         //System.out.println(data.toString());
 
@@ -29,6 +28,22 @@ public class TesteWeka3 {
         apriori.buildAssociations(data);
 
         System.out.println(apriori);
+        
+        data.deleteAttributeAt(0);
+        data.deleteAttributeAt(1);
+        data.deleteAttributeAt(2);
+        data.deleteAttributeAt(3);
+        data.deleteAttributeAt(4);
+        System.out.println(data.numAttributes());
+
+        data.setClassIndex(data.numAttributes() - 1);
+
+        Apriori apriori2 = new Apriori();
+        apriori2.setClassIndex(data.classIndex());
+        apriori2.buildAssociations(data);
+
+        System.out.println(apriori2);
+        
         //System.out.println(apriori.getNumRules());
         //System.out.println(apriori.getAssociationRules().getRules().get(0));
 
@@ -41,7 +56,7 @@ public class TesteWeka3 {
             System.out.println(a);
         }*/
 
-        ArrayList<Atributo> atributos = new ArrayList();
+        /*ArrayList<Atributo> atributos = new ArrayList();
 
         for (int i = 0; i < data.numAttributes(); i++) {
             Atributo a = new Atributo();
@@ -56,7 +71,8 @@ public class TesteWeka3 {
 
         for (Atributo a : atributos) {
             System.out.println(a.getNome() + ": " + a.getValores());
-        }
+        }*/
+        
         
     }
 

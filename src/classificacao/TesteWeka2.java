@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testeweka;
+package classificacao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ public class TesteWeka2 {
 
     public static void main(String[] args) throws Exception {
 
-        DataSource ds = new DataSource("src/testeweka/produtos.arff");
+        DataSource ds = new DataSource("src/classificacao/produtos.arff");
         Instances ins = ds.getDataSet();
         //System.out.println(ins.toString());
 

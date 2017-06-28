@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testeweka;
+package regressao;
 
 import weka.classifiers.bayes.NaiveBayes;
 import weka.core.DenseInstance;
